@@ -6,6 +6,12 @@ namespace ConsoleApp4
         {
             Pablo a = new Cartel(1);
             Cartel c = new Cartel(2);
+
+            a.Scream();
+            c.Scream();
+
+            a.Print();
+            c.Print();
         }
     }
     public abstract class Pablo
@@ -21,7 +27,7 @@ namespace ConsoleApp4
         public abstract void Scream();
         public virtual void Print()
         {
-            Console.WriteLine("I knew you're nere" + _id);
+            Console.WriteLine($"I knew you're here{_id}");
         }
 
     }
